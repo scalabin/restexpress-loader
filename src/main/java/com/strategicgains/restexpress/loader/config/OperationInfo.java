@@ -1,4 +1,4 @@
-package com.strategicgains.restexpress.scaffold.minimal.config;
+package com.strategicgains.restexpress.loader.config;
 
 import org.jboss.netty.handler.codec.http.HttpMethod;
 

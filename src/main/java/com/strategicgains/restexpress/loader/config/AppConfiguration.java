@@ -1,8 +1,7 @@
-package com.strategicgains.restexpress.scaffold.minimal.config;
+package com.strategicgains.restexpress.loader.config;
 
 import java.util.List;
 
-import com.strategicgains.restexpress.scaffold.minimal.controller.BaseBean;
 
 public class AppConfiguration extends BaseBean{
 	/**

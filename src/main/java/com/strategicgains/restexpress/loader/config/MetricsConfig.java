@@ -1,6 +1,5 @@
-package com.strategicgains.restexpress.scaffold.minimal.config;
+package com.strategicgains.restexpress.loader.config;
 
-import com.strategicgains.restexpress.scaffold.minimal.controller.BaseBean;
 
 public class MetricsConfig extends BaseBean
 {

@@ -1,4 +1,4 @@
-package com.strategicgains.restexpress.scaffold.minimal;
+package com.strategicgains.restexpress.loader;
 
 import java.util.concurrent.TimeUnit;
 
@@ -9,15 +9,15 @@ import com.strategicgains.restexpress.Format;
 import com.strategicgains.restexpress.Parameters;
 import com.strategicgains.restexpress.RestExpress;
 import com.strategicgains.restexpress.exception.BadRequestException;
+import com.strategicgains.restexpress.loader.config.AppConfiguration;
+import com.strategicgains.restexpress.loader.config.MetricsConfig;
+import com.strategicgains.restexpress.loader.config.ServiceLoader;
+import com.strategicgains.restexpress.loader.config.YamlConfigRunner;
+import com.strategicgains.restexpress.loader.serialization.ResponseProcessors;
 import com.strategicgains.restexpress.pipeline.SimpleConsoleLogMessageObserver;
 import com.strategicgains.restexpress.plugin.cache.CacheControlPlugin;
 import com.strategicgains.restexpress.plugin.metrics.MetricsPlugin;
 import com.strategicgains.restexpress.plugin.route.RoutesMetadataPlugin;
-import com.strategicgains.restexpress.scaffold.minimal.config.AppConfiguration;
-import com.strategicgains.restexpress.scaffold.minimal.config.MetricsConfig;
-import com.strategicgains.restexpress.scaffold.minimal.config.ServiceLoader;
-import com.strategicgains.restexpress.scaffold.minimal.config.YamlConfigRunner;
-import com.strategicgains.restexpress.scaffold.minimal.serialization.ResponseProcessors;
 import com.strategicgains.syntaxe.ValidationException;
 import com.yammer.metrics.reporting.GraphiteReporter;
 

@@ -1,4 +1,4 @@
-package com.strategicgains.restexpress.scaffold.minimal.serialization;
+package com.strategicgains.restexpress.loader.serialization;
 
 import com.strategicgains.hyperexpress.domain.Link;
 import com.strategicgains.hyperexpress.domain.LinkableCollection;

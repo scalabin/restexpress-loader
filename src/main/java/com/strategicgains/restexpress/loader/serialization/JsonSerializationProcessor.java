@@ -1,4 +1,4 @@
-package com.strategicgains.restexpress.scaffold.minimal.serialization;
+package com.strategicgains.restexpress.loader.serialization;
 
 import com.fasterxml.jackson.databind.module.SimpleModule;
 import com.strategicgains.restexpress.serialization.json.DefaultJsonProcessor;

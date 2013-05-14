@@ -1,4 +1,4 @@
-package com.strategicgains.restexpress.scaffold.minimal;
+package com.strategicgains.restexpress.loader.config;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
