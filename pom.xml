@@ -7,7 +7,7 @@
 		deployable assembly: mvn clean package mvn assembly:single -->
 	<description>A Minimal RestExpress Server</description>
 	<url>https://github.com/RestExpress/RestExpress-Scaffold</url>
-	<groupId>com.strategicgains.archetype</groupId>
+	<groupId>com.strategicgains</groupId>
 	<artifactId>restexpress-loader</artifactId>
 	<version>0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
