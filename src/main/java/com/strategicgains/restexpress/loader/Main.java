@@ -8,7 +8,6 @@ import org.slf4j.LoggerFactory;
 import com.strategicgains.restexpress.Format;
 import com.strategicgains.restexpress.Parameters;
 import com.strategicgains.restexpress.RestExpress;
-import com.strategicgains.restexpress.exception.BadRequestException;
 import com.strategicgains.restexpress.loader.config.AppConfiguration;
 import com.strategicgains.restexpress.loader.config.MetricsConfig;
 import com.strategicgains.restexpress.loader.config.ServiceLoader;
@@ -18,7 +17,6 @@ import com.strategicgains.restexpress.pipeline.SimpleConsoleLogMessageObserver;
 import com.strategicgains.restexpress.plugin.cache.CacheControlPlugin;
 import com.strategicgains.restexpress.plugin.metrics.MetricsPlugin;
 import com.strategicgains.restexpress.plugin.route.RoutesMetadataPlugin;
-import com.strategicgains.syntaxe.ValidationException;
 import com.yammer.metrics.reporting.GraphiteReporter;
 
 public class Main
