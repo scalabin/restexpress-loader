@@ -1,4 +1,4 @@
-package com.strategicgains.restexpress.loader.config;
+package com.strategicgains.restexpress.loader.util;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;

@@ -1,4 +1,4 @@
-package com.strategicgains.restexpress.loader.config;
+package com.strategicgains.restexpress.loader.exception;
 
 import com.strategicgains.restexpress.RestExpress;
 
