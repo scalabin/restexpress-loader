@@ -130,7 +130,7 @@ public class DtoAssembler {
 
 			for (String name : DtoAssembler.getQuery_Map().get(actClazz)) {
 				LOG.debug(name);
-				BeanUtils.setProperty(actionDto, name, request.getHeader(name));
+				BeanUtils.setProperty(actionDto, name, request.getQueryStringMap().get(name));
 			}
 
 			ValidationEngine.validateAndThrow(actionDto);
