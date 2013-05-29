@@ -4,3 +4,6 @@ restexpress-loader
 ==================
 
 Easy to develop restful service using Restexpress
+
+1. Basic JSR311 Annotation implementation
+2. DTO assembly integrated with validation via Syntaxe
