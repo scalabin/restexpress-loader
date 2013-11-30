@@ -1,20 +1,6 @@
 package com.strategicgains.restexpress.loader;
 
-import com.strategicgains.restexpress.RestExpress;
-import com.strategicgains.restexpress.loader.config.AppConfiguration;
-import com.strategicgains.restexpress.loader.config.OperationInfo;
-import com.strategicgains.restexpress.loader.exception.REExceptionMapper;
-import com.strategicgains.restexpress.loader.util.AnnotationUtils;
-
-import org.apache.commons.lang.StringUtils;
-
-import org.jboss.netty.handler.codec.http.HttpMethod;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import java.lang.reflect.Method;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -22,6 +8,18 @@ import java.util.Map;
 
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+
+import org.apache.commons.lang.StringUtils;
+import org.jboss.netty.handler.codec.http.HttpMethod;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.strategicgains.restexpress.RestExpress;
+import com.strategicgains.restexpress.loader.config.AppConfiguration;
+import com.strategicgains.restexpress.loader.config.OperationInfo;
+import com.strategicgains.restexpress.loader.exception.REExceptionMapper;
+import com.strategicgains.restexpress.loader.util.AnnotationUtils;
 
 
 /**
@@ -158,7 +156,8 @@ public class ServiceLoader {
     public void routeBuild(OperationInfo op) {
         LOG.info(op.getPath() + ":" + op.getAction() + ":" + op.getHttpMethod() + ":" + op.getName());
 
-        if ("text/plain".equals(op.getProduces())) {
+        if ("text/plain".equals(op.getProduces())
+        		 || MediaType.APPLICATION_OCTET_STREAM.equals(op.getProduces())) {
             server.uri(op.getPath(), loadControllerInstance(op.getSvcClass()))
                   .action(op.getAction(), op.getHttpMethod(), op.getParaClasses()).name(op.getName()).noSerialization();
         } else {
